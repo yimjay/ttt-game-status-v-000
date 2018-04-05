@@ -1,4 +1,3 @@
-require "pry"
 
 # Helper Method
 def position_taken?(board, index)
@@ -18,7 +17,7 @@ WIN_COMBINATIONS = [
   ]
   
 def won?(board)
-  #binding.pry
+  binding.pry
   WIN_COMBINATIONS.each do |win_combination|
     #binding.pry
     if position_taken?(board, win_combination[2]) && board[win_combination[0]] == board[win_combination[1]] && board[win_combination[1]] ==  board[win_combination[2]]
