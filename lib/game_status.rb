@@ -21,8 +21,8 @@ def won?(board)
   #binding.pry
   WIN_COMBINATIONS.each do |win_combination|
     if position_taken?(board, board[win_combination[2]]) && board[win_combination[0]] == board[win_combination[1]] && board[win_combination[1]] ==  board[win_combination[2]]
-      return win_combination
       binding.pry
+      return win_combination
     end
   end
   false
